@@ -1,0 +1,51 @@
+
+
+
+
+
+
+.section-vente {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .produit {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produit img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .produit h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .produit p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-acheter {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-acheter:hover {
+    background-color: #0056b3;
+  }
+  

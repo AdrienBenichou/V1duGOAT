@@ -1,0 +1,274 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    background: linear-gradient(to right, #FFB6C1, #87CEEB);
+    margin: 0;
+  }
+  header img {
+    width: 200px;
+    height: 100px;
+    transition: transform 5s ease;
+  }
+  
+  /* Animation au survol de l'image */
+  header img:hover {
+    transform: rotate(1200deg); /* Fait tourner l'image de 360 degrés */
+  }
+  
+  h1 {
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h1::before {
+    content: "C'est MOI"; /* Insère "Moi" avant le texte */
+    position: absolute;
+    top: -20px;
+    left: 680px;
+    opacity: 0; /* Démarre avec une opacité de 0 (transparent) */
+    transition: opacity 0.8s; /* Animation de transition */
+}
+
+h1:hover::before {
+    opacity: 1; /* Augmente l'opacité à 1 (complètement visible) au survol */
+}
+
+  h2 {
+    color: #000000;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+
+  .bouton {
+    background: linear-gradient(to right, #FFD166, #FF6347);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .bouton:hover {
+    background: linear-gradient(to right, #FF6347, #FFD166);
+  }
+   
+  .image-redimensionnee1 {
+    width: 400px; /* Largeur arbitraire */
+    height: 265px; /* Hauteur arbitraire */
+    display: block; /* Pour centrer l'image horizontalement */
+    margin: 20px auto; /* Marge de 20px en haut et en bas, et auto pour centrer horizontalement */
+  }
+
+  header {
+    background: linear-gradient(to right, #87CEEB, #FFB6C1);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  section {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  footer {
+    background: linear-gradient(to right, #87CEEB, #FFB6C1);
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer ul li:last-child {
+    margin-right: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .sections {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+  }
+  .sections a {
+    text-decoration: none; /* Supprime le soulignement des liens hypertexte à l'intérieur des sections */
+}
+
+  .sections section {
+    flex-shrink: 0;
+    width: 33.33%;
+    overflow: hidden;
+    white-space: normal;
+    user-select: none;
+  }
+/* Ajout d'une transition pour l'animation au survol des sections */
+.sections section {
+    transition: transform 0.3s ease; /* Animation de transformation de 0.3 seconde avec une courbe d'accélération */
+}
+
+/* Effet d'animation au survol */
+.sections section:hover {
+    transform: scale(1.05); /* Agrandissement de 5% au survol */
+}
+/* Ajouter le curseur pointer lorsque le curseur survole la section */
+.sections section:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+  
+  .lecteur-audio {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .lecteur-audio audio {
+    width: 20%;
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+  }
+
+
+
+
+
+
+  .menu-deroulant {
+    text-align: center;
+  }
+  
+  .menu-deroulant ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-deroulant li {
+    display: inline-block;
+    margin-right: 20px;
+    border-right: 1px solid #999; /* Ajoute une bordure droite à chaque élément */
+    padding-right: 20px; /* Ajoute un espace entre le texte et la bordure */
+  }
+  
+  /* Supprime la bordure droite du dernier élément */
+  .menu-deroulant li:last-child {
+    border-right: none;
+  }
+  
+  .menu-deroulant a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease; /* Ajouter une transition pour l'effet de sautillement */
+}
+
+.menu-deroulant li:hover a {
+  color: #ff00c889; /* Couleur de survol */
+  transform: translateY(50px); /* Effet de sautillement vers le haut */
+}
+
+  
+
+
+
+
+
+  
+
+
+
+
+  .lecteur-audio {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.lecture-checkbox {
+    display: none;
+}
+
+.lecture-pause {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+}
+
+.lecture-pause img {
+    width: 100%;
+    height: auto;
+}
+
+/* Changement d'image lorsque la case à cocher est cochée */
+.lecture-checkbox:checked + .lecture-pause #lecturePauseImg {
+    content: url("https://cdn-icons-png.flaticon.com/512/16/16427.png");
+}
+
+
+
+
+
+
